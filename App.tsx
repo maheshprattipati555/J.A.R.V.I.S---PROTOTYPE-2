@@ -10,7 +10,7 @@ import { LogEntry, WeatherData, Timer, TodoItem, ToolCallData, ChatMessage, User
 import { Mic, Power, Video, VideoOff, Keyboard, Radio, Terminal, Send, MessageSquare, Zap, Lock, Mail, User, ArrowRight, ShieldCheck, RefreshCw, Bell, Globe, Smartphone, CheckCircle, Chrome, Box, MessageCircle } from 'lucide-react';
 
 // NOTE: In a real production environment, this key should be injected via build tools.
-const API_KEY = process.env.API_KEY as string;
+const API_KEY = import.meta.env.VITE_API_KEY as string;
 
 interface AppConfig {
   native: (cmd: string) => string;
